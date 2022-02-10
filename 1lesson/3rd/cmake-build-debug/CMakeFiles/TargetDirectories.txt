@@ -1,0 +1,3 @@
+C:/Program Files/Git/infa_2021_khashaev/3rd/cmake-build-debug/CMakeFiles/3rd.dir
+C:/Program Files/Git/infa_2021_khashaev/3rd/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Program Files/Git/infa_2021_khashaev/3rd/cmake-build-debug/CMakeFiles/rebuild_cache.dir
