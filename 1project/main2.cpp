@@ -170,7 +170,5 @@ int main() {
     for (int i = 0; i < iterat; i++) {
         std::cout << square1[i] << ", ";
     }
-    //test(field);
-    //print(field);
     return 0;
 }
