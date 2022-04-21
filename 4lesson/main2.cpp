@@ -61,9 +61,9 @@ int main() {
     std::cin >> n;
     int *data = new int[n];
     fill(data, n, 12);
-    //print(data, n);
+    print(data, n);
     tree_sort(data, n);
-    //print(data, n);
+    print(data, n);
     delete []data;
     return 0;
 }
