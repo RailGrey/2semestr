@@ -147,7 +147,6 @@ void transplant(SimpleTree *t, ListNode* u, ListNode* v, ListNode* NIL) {
 }
 
 void remove(SimpleTree *t, ListNode* z, ListNode* NIL) {
-    ListNode *tmp = z;
     if (z -> left == NIL) {
         transplant(t, z, z -> right, NIL);
     } else if (z -> right == NIL) {
@@ -212,6 +211,7 @@ int main() {
     insert(&tree, &z7, &NIL);
     remove(&tree, &z6, &NIL);
     insert(&tree, &z8, &NIL);
+    remove(&tree, &z1, &NIL);
     print(&tree, &queue, &NIL);
     std::cout << find_minimum(tree.root, &NIL) -> key << " " << find_maximum(tree.root, &NIL) -> key;
     return 0;
