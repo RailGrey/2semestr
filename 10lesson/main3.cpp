@@ -25,7 +25,12 @@ int LCS(char *a, char *b, int i, int j) {
             memo[k][l] = -1;
         }
     }
-    return help_LCS(a, b, i, j, memo);
+    int result = help_LCS(a, b, i, j, memo);
+    for (int k = 0; k < i + 1; k++) {
+        delete []memo[k];
+    }
+    delete []memo;
+    return result;
 }
 
 int main() {
@@ -40,6 +45,8 @@ int main() {
     for (int i = 1; i < m + 1; i++) {
         std::cin >> b[i];
     }
-    std::cout << "Similar " << float(LCS(a, b, n, m)) / std::min(n, m) * 100 << "%";
+    std::cout << "Similar " << LCS(a, b, n, m) << "/" << n;
+    delete []a;
+    delete []b;
     return 0;
 }
